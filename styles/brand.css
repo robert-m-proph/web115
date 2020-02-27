@@ -1,0 +1,174 @@
+/* 
+WEB 115
+
+This CSS is the default Style for The Playbook brand.
+*/
+
+body {
+	background-color: #0e0e0e; /* baltic sea */
+	margin: 10px 10%;
+	font-family: Courier;
+	color: #f9c47b; /* chardonnay */
+	font-weight: bold;
+	font-size: 1em;
+}
+h1, h2, h3, h4, h5 {
+	font-family: Verdana;
+	color: #567c86; /* hoki */
+}
+nav {
+	font-weight: bold;
+	font-size: 1.2em;
+}
+nav span {
+	font-weight: bold;
+	font-size: 1em;
+	margin-top: 200px;
+	color: #b7aea6;  /* martini */
+}
+nav span:link { color: #b7aea6; } /* martini */
+nav span:visited { color: #b7aea6; } /* martini */
+nav span:hover { color: #567c86; /* hoki */
+	cursor: pointer;
+}
+a { text-decoration: none;
+	color: #b7aea6; /* martini */
+	cursor: pointer;
+}
+a:link { color: #b7aea6; } /* martini */
+a:visited { color: #b7aea6; } /* martini */
+a:hover { color: #567c86; } /* hoki */
+
+footer {
+	text-align: center;
+	display: block;
+	font-size: 1em;
+}
+form {
+	display: block;
+	margin-left: auto;
+	margin-right: auto;
+}
+fieldset {
+	width: 400px;
+	border: 1px solid #f9c47b;
+	border-radius: 5px;
+	padding: 15px;
+	text-align: right;
+}
+legend {
+	background-color: #0e0e0e;
+	color:  #567c86;
+	border: 1px solid #f9c47b;
+	border-radius: 2px;
+	padding: 3px 6px;
+	text-align: center;
+	font-size: 1.2em;
+	text-transform: uppercase;
+}
+
+/* Classes and IDs */
+#tempfont {
+	font-size: 1.5em;
+}
+#rectangle {
+	border-style: solid;
+	border-color: #f9c47b; /* chardonnay */
+	padding: 1px 30px;
+	padding-bottom: 5px;
+	margin-top: 15px;
+}
+#chapters {
+	display: flex;
+	font-family: Verdana;
+	color: #567c86; /* hoki */
+	font-size: 1.2em;
+	margin-top: 5%;
+}
+#chapters2 {
+	float: left;
+	width: 200px;
+	margin-left: 25%;
+}
+#chapters3 {
+	float: right;
+	width: 200px;
+	margin-right: 25%;
+}
+#container{
+	margin-top: 1%;
+	display: flex;
+}
+#header {
+	text-align: center;
+	display: block;
+	margin-right: auto;
+	margin-top: 5%;
+}
+#headerPicture {
+	display: none;
+}
+#navigation {
+	margin-top: 3%;
+	text-align: center;
+	display: block;
+	margin-left: auto;
+	margin-right: auto;
+}
+#fizzbuzzlist {
+	text-align: left;
+	display: inline-block;
+	margin-left: auto;
+	margin-right: auto;
+	line-height: 2em;
+}
+.center {
+	text-align: center;
+	display: block;
+	margin-left: auto;
+	margin-right: auto;
+}
+.right {
+	text-align: right;
+	display: block;
+	margin-left: auto;
+	margin-right: auto;
+}
+.left {
+	text-align: left;
+	display: block;
+	margin-left: auto;
+	margin-right: auto;
+}
+.introTitle {
+	color: #567c86; /* hoki */
+	font-size: 1.2em;
+}
+/* Media Queries */
+@media (max-width: 460px) {
+h1 {
+	font-size: .85em;
+	line-height: 1;
+}
+body {
+	font-size: .65em;
+}
+#header {
+	text-align: center;
+	display: block;
+	margin-right: auto;
+	margin-top: 20%;
+	margin-left: auto;
+}
+#headerPicture {
+	display: none;
+}
+}
+
+@media (min-width: 768px) {
+#headerPicture {
+	display: block;
+}
+}
+
+

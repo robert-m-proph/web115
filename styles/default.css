@@ -1,0 +1,44 @@
+/*
+WEB 115
+
+This CSS is the default Style for my web pages. Robert Propheter 
+*/
+
+body {
+	background-color: #d8d7d2; /* gray */
+	margin: 10px 10%;
+	font-family: Courier;
+	color: #000000; /*black*/
+	font-size: 1em;
+}
+h1, h2, h3, h4, h5 {
+	font-family: Verdana;
+	color: #4157ac; /* blue */
+}
+nav {
+	font-weight: bold;
+}
+a { text-decoration: none;}
+a:link { color: #0f1b57; /* dark blue */
+	font-weight: bold; } 
+a:visited { color: #0f1b57; } /* dark blue */
+a:hover { color: #4157ac; } /* blue */
+
+footer {
+	text-align: center;
+	display: block;
+	font-size: 0.8em;
+}
+figcaption {
+	color: #4157ac; /* blue */
+}
+
+/* Classes and IDs */
+
+.center {
+	text-align: center;
+	display: block;
+	margin-left: auto;
+	margin-right: auto;
+}
+

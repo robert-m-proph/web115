@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang = "en">
+	<head>
+		<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+		<link rel="stylesheet" type="text/css" href="../styles/brand.css">
+		<link rel="shortcut icon" href="../images/cs_icon.ico">
+		<link rel="icon" href="../images/cs_animated_icon.gif" type="image/gif">
+		<title>CS | FizzBuzz 2</title>	
+		<!--[if lt IE 9]>
+		<script src="http://html5shim.googlecode.com/svn/trunk/html5.js">
+		</script>
+		<![endif]-->	
+		<!--[if lt IE 9]>
+		<script src="http://css3-mediaqueries-js.googlecode.com/svn/trunk/css3-mediaqueries.js">
+		</script>
+		<![endif]-->	
+	</head>
+	<body>
+		<!-- HEADER -->
+		<div data-include="http://students.cpcc.edu/~rprophe0/web115/components/header.html"></div>
+		<!-- Links (Navigation) -->
+		<div data-include="http://students.cpcc.edu/~rprophe0/web115/components/swtl_nav.html"></div>
+		<main>
+			<h2 class="center">CourtSide's FizzBuzz!</h2>
+			<p>This page displays a form for you to enter two numbers. Once you enter two numbers into the form and
+			click the submit button, a message will be displayed showing whether the numbers are evenly divisible by 
+			each other.</p>
+			<!-- Greeting -->
+			<h4 id="greeting" class="center">Welcome to CourtSide's FizzBuzz 2!</h4>
+			<br>
+			<form id="numberform">
+				<fieldset>
+					<legend>Fizz Buzz Numbers</legend>
+					<div>
+						<label for="firstnumber">Number:</label>
+						<input type="number" id="firstnumber" value="3" required="required">
+					</div><br>
+					<div>
+						<label for="divisor">Divisor:</label>
+						<input type="number" id="divisor" value="5" required="required">
+					</div>
+					<br>
+					<button onclick="displayOutput()" type="button">Submit</button>
+					<button onclick="resetDiv()" type="reset">Reset</button>
+				</fieldset>
+			</form>
+			<br>
+			<!-- This is where the output of the actual fizzbuzz will go -->
+			<div id="fizzbuzz"></div>
+		</main>
+		<!-- FOOTER -->
+		<div data-include="http://students.cpcc.edu/~rprophe0/web115/components/footer.html"></div>
+		<!-- JavaScript -->
+		<script src="http://students.cpcc.edu/~rprophe0/web115/scripts/HTMLInclude.js"></script>
+		<script src="http://students.cpcc.edu/~rprophe0/web115/scripts/fizzbuzz2.js"></script>
+	</body>
+</html>

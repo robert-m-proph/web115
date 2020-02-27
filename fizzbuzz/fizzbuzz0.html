@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang = "en">
+	<head>
+		<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+		<link rel="stylesheet" type="text/css" href="../styles/brand.css">
+		<link rel="shortcut icon" href="../images/cs_icon.ico">
+		<link rel="icon" href="../images/cs_animated_icon.gif" type="image/gif">
+		<title>CS | FizzBuzz 0 - Part 1</title>	
+		<!--[if lt IE 9]>
+		<script src="http://html5shim.googlecode.com/svn/trunk/html5.js">
+		</script>
+		<![endif]-->	
+		<!--[if lt IE 9]>
+		<script src="http://css3-mediaqueries-js.googlecode.com/svn/trunk/css3-mediaqueries.js">
+		</script>
+		<![endif]-->	
+	</head>
+	<body>
+		<!-- HEADER -->
+		<div data-include="http://students.cpcc.edu/~rprophe0/web115/components/header.html"></div>
+		<!-- Links (Navigation) -->
+		<div data-include="http://students.cpcc.edu/~rprophe0/web115/components/swtl_nav.html"></div>
+		<main>
+			<h2 class="center">CourtSide's FizzBuzz!</h2>
+			<p>Below you will see a form for you to input your name. Once you have
+			completed the form, click the submit button! This page will change the greeting to 
+			include your name. After completing the form, it will also display "CourtSide Basketball 
+			125 times.</p>
+			<!-- Greeting -->
+			<h4 id="greeting" class="center">Welcome to CourtSide's FizzBuzz 0 - Part 1!</h4>
+			<br>
+			<form id="username">
+				<fieldset>
+					<legend>User Name</legend>
+					<div>
+						<label for="firstname">First Name:</label>
+						<input type="text" id="firstname" value="Lawrence" required="required">
+					</div><br>
+					<div>
+						<label for="middleinitial">Middle Initial:</label>
+						<input type="text" id="middleinitial" value="G" maxlength="1" required="required">
+					</div>
+					<div><br>
+						<label for="lastname">Last Name:</label>
+						<input type="text" id="lastname" value="Roberts" required="required">
+					</div><br>
+					<button onclick="displayFizzBuzzContent()" type="button">Submit</button>
+				</fieldset>
+			</form>
+			<br>
+			<!-- This is where the output of the actual fizzbuzz will go -->
+			<div id="fizzbuzz"></div>
+		</main>
+		<!-- FOOTER -->
+		<div data-include="http://students.cpcc.edu/~rprophe0/web115/components/footer.html"></div>
+		<!-- JavaScript -->
+		<script src="http://students.cpcc.edu/~rprophe0/web115/scripts/HTMLInclude.js"></script>
+		<script src="http://students.cpcc.edu/~rprophe0/web115/scripts/fizzbuzz0.js"></script>
+	</body>
+</html>
